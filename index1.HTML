@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+         ul{
+             list-style: none;
+         }
+        .bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 65px;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .top_main {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 980px;
+            margin: 0 auto;
+            z-index: 2;
+        }
+
+        .logo{
+            width: 200px;
+            display: inline-block;
+            line-height: 65px;
+
+        }
+
+        .logo a{
+            display: block
+        }
+
+        .logo img{
+            width: 100%;
+            vertical-align: middle
+        }
+
+
+        .top_main ul{
+            float: right;
+
+            width: 350px;
+            padding-top: 36px
+        }
+
+
+        .top_main ul li {
+            float: left;
+            width: 25%;
+            color: #fff;
+            border-left:  1px solid #fff;
+            box-sizing: border-box;
+            text-align: center
+        }
+
+        .top_main ul li:first-child{
+            border: none
+        }
+
+        .pos li {
+            position: relative;
+            width: 50%;
+            font-size: 0
+        }
+
+        .pos li img{
+            width: 100%
+        }
+        .pos li p{
+            font-size: 14px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+            width: 100%;
+            background: rgba(0,0,0,0.5);
+            opacity: 0;
+            transition: all 1s
+        }
+
+        .pos li:hover p{
+            opacity: 1;
+          
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="bg"></div>
+        <div class="top_main">
+            <div class="logo">
+                <a href="/">
+                    <img src="./img/logo.png" alt="">
+                </a>
+            </div>
+            <ul>
+                <li>HOME</li>
+                <li>Abilities</li>
+                <li>Portfolio</li>
+                <li>About</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div>
+       <ul class="pos">
+           <li>
+               <img src="./img/ad2.png" alt="">
+               <p>服装海报宣传设计</p>
+           </li>
+       </ul>
+    </div>
+</body>
+
+</html>
